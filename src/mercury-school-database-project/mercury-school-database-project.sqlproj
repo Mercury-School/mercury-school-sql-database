@@ -61,11 +61,13 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="tables" />
+    <Folder Include="Sequences" />
   </ItemGroup>
   <Target Name="BeforeBuild">
     <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
   </Target>
   <ItemGroup>
     <Build Include="tables\dbo.Person.sql" />
+    <Build Include="Sequences\dbo.PersonSequence.sql" />
   </ItemGroup>
 </Project>
